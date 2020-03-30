@@ -5,19 +5,21 @@
     <style>
         div {
             background-color: teal;
-            width: 100px;
-            height: 400px;
             margin: 70px;
             padding: 120px; 
         }
-    </style>
-  </head>
-  
+      @media print {
+          .screen-only {
+              display: none;
+          }
+      }
+  </style>
   <body>
       <div>
   <h1 style="color:purple;text-align:center;"> Welcome to my webpage </h1>
     <p> ahok </p>
     </div>
+      <p class="screen-only">This will not appear when printed</p>
   </body>
+
 </html>
- 
